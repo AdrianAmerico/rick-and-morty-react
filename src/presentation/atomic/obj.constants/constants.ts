@@ -5,7 +5,7 @@ export const colors = {
   background_secundary: '#fff',
   text: '#000',
   red: '#E50914',
-  black: '#141414',
+  black: 'rgba(0, 0, 0, 0.6)',
   black_secondary: '#000',
   green: '#46d369',
   lightGray: 'gray',
@@ -14,11 +14,6 @@ export const colors = {
 };
 
 export const spacing = {
-  /**
-   * @property {string} small - 8px
-   * @property {string} medium - 12px
-   * @property {string} large - 20px
-   */
   small: '8px',
   medium: '12px',
   large: '20px',
