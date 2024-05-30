@@ -29,6 +29,8 @@
     "semi": 0,
     "@typescript-eslint/explicit-function-return-type": "off",
     "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "no-unused-vars": "off",
     "@typescript-eslint/no-floating-promises": "off",
     "@typescript-eslint/no-misused-promises": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
@@ -39,6 +41,6 @@
     "@typescript-eslint/require-array-sort-compare": "off",
     "@typescript-eslint/ban-types": "off"
   },
-  "plugins": ["react"],
+  "plugins": ["react", "better-styled-components"],
   "ignorePatterns": ["babel-config.json"]
 }

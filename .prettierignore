@@ -1,8 +1,2 @@
-.eslintignore
-node_modules
-yarn.lock
-public
-coverage/
-dist
-.vscode
-.husky
+build
+coverage
