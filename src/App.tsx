@@ -1,11 +1,15 @@
 import { ThemeProvider } from 'styled-components';
-import { defaultTheme } from './presentation/atomic';
+import { defaultTheme, GlobalStyle } from './presentation/atomic';
 import { Home } from './presentation/pages';
+import { ApolloContextProvider } from './presentation/context';
 
 function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
-      <Home />
+      <ApolloContextProvider>
+        <Home />
+        <GlobalStyle />
+      </ApolloContextProvider>
     </ThemeProvider>
   );
 }
