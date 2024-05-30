@@ -16,6 +16,8 @@ export const GlobalStyle = createGlobalStyle`
 
 html, body, #root {
     min-height: 100%;
+    height: 100%;
+    width: 100%;
 }
 body {
     background: ${(props) => props.theme.colors.background_primary};
@@ -23,5 +25,10 @@ body {
     color: ${(props) => props.theme.colors.text};
     font-family: ${fontFamily};
     line-height: ${lineHeight.small};
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
 }
 `;
