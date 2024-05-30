@@ -15,9 +15,13 @@
     "check-lint": "eslint . --ext ts --ext tsx --ext js"
   },
   "dependencies": {
+    "@apollo/client": "^3.10.4",
+    "graphql": "^16.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.51.5",
     "react-router-dom": "^6.23.1",
+    "react-select": "^5.8.0",
     "styled-components": "^6.1.11"
   },
   "devDependencies": {
@@ -25,12 +29,9 @@
     "@commitlint/config-conventional": "^19.2.2",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.38.1",
     "@vitejs/plugin-react": "^4.2.1",
-    "globals": "^15.3.0",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.5",
-    "prettier": "3.2.5",
-    "vite": "^5.2.0",
     "eslint": "^8.31.0",
     "eslint-config": "^0.3.0",
     "eslint-config-prettier": "^8.5.0",
@@ -44,8 +45,11 @@
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
     "eslint-plugin-standard": "^5.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "@typescript-eslint/parser": "^5.38.1",
-    "typescript": "^4.9.3"
+    "globals": "^15.3.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.5",
+    "prettier": "3.2.5",
+    "typescript": "^4.9.3",
+    "vite": "^5.2.0"
   }
 }
