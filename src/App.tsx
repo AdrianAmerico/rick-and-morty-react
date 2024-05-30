@@ -1,7 +1,13 @@
-import './App.css';
+import { ThemeProvider } from 'styled-components';
+import { defaultTheme } from './presentation/atomic';
+import { Home } from './presentation/pages';
 
 function App() {
-  return <>Hello world</>;
+  return (
+    <ThemeProvider theme={defaultTheme}>
+      <Home />
+    </ThemeProvider>
+  );
 }
 
 export default App;
