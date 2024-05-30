@@ -11,6 +11,3 @@ function App() {
 }
 
 export default App;
-
-// atomo > molecula > organismo > template > pagina
-// atomo > molecula > organismo > template > pagina
