@@ -1,10 +1,10 @@
 import { useQuery } from '@apollo/client';
-import { GET_CHARACTERS } from '@/data/graphql/queries/get-characters';
-import { Character } from '@/data/models';
+import { GET_CHARACTERS } from '@/data/graphql/queries';
+import { CharacterEpisodes } from '@/data/models';
 
 interface GetCharactersData {
   characters: {
-    results: Character[];
+    results: CharacterEpisodes[];
   };
 }
 
