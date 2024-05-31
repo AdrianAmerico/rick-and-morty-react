@@ -7,6 +7,21 @@ border-collapse: collapse;
 border-spacing: 0;
 margin-top: 1rem;
 flex: 1;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 0.75rem;
+    border-radius: 0.5rem;
+  }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+    }
 `;
 
 export const Table = styled.table`
@@ -20,23 +35,11 @@ thead {
 td {
     padding: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    &:not(:first-child) {
-        text-align: center;
-    }
 }
 
 th {
     padding: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
-    &:first-child {
-        padding: 0.5rem 0.5rem 0.5rem 1rem;
-        border-radius: 0.5rem 0 0 0;
-    }
-
-    &:last-child {
-        padding: 0.5rem 1rem 0.5rem 0.5rem;
-        border-radius: 0 0.5rem 0 0;
-    }
+    padding: 0.5rem;
 }
 `;
