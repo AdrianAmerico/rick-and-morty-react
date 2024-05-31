@@ -6,9 +6,15 @@ export const Li = styled.li`
 list-style: none;
 color: ${(props) => props.theme.colors.text};
 margin-left: 8%;
+
 :hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+a {
+    color: ${(props) => props.theme.colors.text};
+    text-decoration: none;
 }
 `;
 
