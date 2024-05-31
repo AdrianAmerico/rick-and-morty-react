@@ -15,12 +15,14 @@
     "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
+
     "prettier"
   ],
   "parserOptions": {
     "project": "./tsconfig-eslint.json"
   },
   "rules": {
+    "unused-imports/no-unused-imports": "error",
     "@typescript-eslint/explicit-module-boundary-types": ["off"],
     "@typescript-eslint/consistent-type-definitions": "off",
     "@typescript-eslint/strict-boolean-expressions": "off",
@@ -41,6 +43,6 @@
     "@typescript-eslint/require-array-sort-compare": "off",
     "@typescript-eslint/ban-types": "off"
   },
-  "plugins": ["react", "better-styled-components"],
+  "plugins": ["react", "better-styled-components", "unused-imports"],
   "ignorePatterns": ["babel-config.json"]
 }
