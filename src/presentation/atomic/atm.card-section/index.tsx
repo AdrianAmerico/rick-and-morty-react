@@ -9,4 +9,5 @@ padding: 1rem;
 width: 100%;
 transition: ease all 250ms;
 margin-top: ${spacing.large};
+overflow: auto;
 `;
