@@ -6,3 +6,7 @@ export * from './atm.card';
 export * from './atm.typography';
 export * from './atm.card-section';
 export * from './atm.loading';
+export * from './atm.breadcrumbs';
+export * from './atm.loading-content';
+export * from './atm.error-content';
+export * from './atm.table';

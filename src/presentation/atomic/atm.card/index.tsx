@@ -1,15 +1,16 @@
+import { HTMLAttributes } from 'react';
 import { Typography } from '../atm.typography';
 import { CardContent } from './styles';
 
-interface CardProps {
+type CardProps = HTMLAttributes<HTMLDivElement> & {
   imgSrc: string;
   title: string;
   subtitle: string;
-}
+};
 
-export const Card = ({ imgSrc, title, subtitle }: CardProps) => {
+export const Card = ({ imgSrc, title, subtitle, ...props }: CardProps) => {
   return (
-    <CardContent>
+    <CardContent {...props}>
       <img src={imgSrc} alt={title} />
       <Typography.Strong>{title}</Typography.Strong>
       <Typography.Span>{subtitle}</Typography.Span>

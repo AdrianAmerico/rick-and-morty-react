@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 html, body, #root {
-    min-height: 100%;
+    max-height: 100vh;
     height: 100%;
     width: 100%;
 }
@@ -30,5 +30,9 @@ body {
 #root {
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 768px) {
+        font-size: ${fontSize.xSmall};
+    }
 }
 `;

@@ -1,11 +1,19 @@
 import { useGetCharacters } from '@/domain/hooks/use-get-characters';
-import { Card, CardSection, Loading, Typography } from '@/presentation/atomic';
-import { ErrorContent, LoadingContent } from './styles';
+import {
+  Card,
+  CardSection,
+  ErrorContent,
+  Loading,
+  LoadingContent,
+  Typography,
+} from '@/presentation/atomic';
 import { useCustomFilters } from '@/domain/home/use-custom-filters';
+import { useNavigate } from 'react-router-dom';
 
 export const CharactersList = () => {
-  const { filter, handleUpdateFilter } = useCustomFilters();
+  const { filter } = useCustomFilters();
   const { data, error, loading } = useGetCharacters(filter.name);
+  const navigate = useNavigate();
 
   if (loading)
     return (
@@ -25,12 +33,13 @@ export const CharactersList = () => {
 
   return (
     <CardSection>
-      {data?.characters?.results?.map((character) => (
+      {data?.characters?.results?.map(({ id, image, name, status }) => (
         <Card
-          key={character.id}
-          imgSrc={character.image}
-          title={character.name}
-          subtitle={character.status}
+          key={id}
+          imgSrc={image}
+          title={name}
+          subtitle={status}
+          onClick={() => navigate(`/${id}`)}
         />
       ))}
     </CardSection>
