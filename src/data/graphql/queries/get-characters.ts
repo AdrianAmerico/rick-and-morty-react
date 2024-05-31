@@ -10,12 +10,6 @@ export const GET_CHARACTERS = gql`
        status
        type
        gender
-       origin {
-         name
-       }
-       location {
-         name
-       }
        image
      }
    }
