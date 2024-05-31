@@ -5,11 +5,16 @@ export interface Character {
   status: string;
   type: string;
   gender: string;
-  origin: {
-    name: string;
-  };
-  location: {
-    name: string;
-  };
   image: string;
+}
+
+export interface CharacterEpisodes {
+  id: string;
+  name: string;
+  image: string;
+  status: string;
+  episode: Array<{
+    id: string;
+    name: string;
+  }>;
 }
