@@ -10,6 +10,7 @@ export const Main = styled.main`
     max-width: 80%;
     width: 100%;
     flex: 1;
+    overflow: hidden;
 
     img {
         width: 100%;
