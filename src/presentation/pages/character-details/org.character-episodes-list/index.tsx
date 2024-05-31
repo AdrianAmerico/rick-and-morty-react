@@ -41,8 +41,8 @@ export const CharacterEpisodesList = ({
       <Breadcrumbs
         altImage={character?.name}
         srcImage={character?.image}
-        subTitle={character?.name}
-        title={character?.status}
+        title={character?.name}
+        subTitle={character?.status}
       />
 
       <TableContainer>
