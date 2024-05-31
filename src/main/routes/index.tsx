@@ -7,8 +7,9 @@ import {
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Home />}>
-      <Route path=":id" element={<CharacterDetails />} />
-    </Route>
+    <>
+      <Route path="/" element={<Home />} />
+      <Route path="/:id" element={<CharacterDetails />} />
+    </>
   )
 );
