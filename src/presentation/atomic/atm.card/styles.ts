@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { spacing } from '../obj.constants';
 
-export const CardContent = styled.div`
+export const CardContent = styled.div<{ onClick?: Function }>`
 display: flex;
 flex-direction: column;
 border-radius: ${spacing.small};
@@ -16,4 +16,16 @@ img {
 strong {
   line-height: 1.5;
 }
+
+${({ onClick }) =>
+  onClick &&
+  `
+  cursor: pointer;
+  transition: ease all 250ms;
+
+  &:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+`}
 `;
